@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background: #f6f6f6;
+    font-family: 'Lora', serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Nunito", sans-serif;
+    color: #444;
+    margin: 5px;
+}
+.clearflix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.content{
+    width: 90%;
+    margin: 30px auto 30px;
+    border: 1px solid red;
+}
+.content .main-content{
+    width: 70%;
+    float: left;
+    border: 1px solid blue;
+}
+.content .sidebar{
+    width: 30%;
+    float: left;
+    border: 1px dashed green;
+    height: 300px;
+}
+.content clearflix .post .post-preview h1 a{
+    color: #444;
+}

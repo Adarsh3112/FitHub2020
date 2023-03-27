@@ -1,0 +1,5 @@
+        if CreatUser.objects.filter(username=username).exists():
+            print('Username Already Taken')
+        elif CreatUser.objects.filter(email_id=email_id).exists():
+            print('Email already registered')
+        else:
