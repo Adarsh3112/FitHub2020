@@ -3,6 +3,7 @@ FROM python:3.9-slim-buster
 WORKDIR /
 
 COPY . /
+
 RUN pip install -r requirement.txt
 
 EXPOSE 8000
