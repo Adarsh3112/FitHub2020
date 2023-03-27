@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+        appRegistry = 'nikhil2611/fithub' 
+    }
     stages{
         stage("Try"){
             steps{
@@ -7,8 +10,8 @@ pipeline {
             }
         }
         stage("Build image"){
-            steps{
-                sh"docker build -t fithub:latest ."
+            script{
+                dockerImage = docker.build( appRegistry + ":$BUILD_NUMBER", "./Docker-files/app/multistage/" ) 
             }
         }
     }
