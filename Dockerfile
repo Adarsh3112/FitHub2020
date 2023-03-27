@@ -1,7 +1,7 @@
 FROM python:3.9-slim-buster
 
 WORKDIR /
-# RUN mkdir build && python manage.py collectstatic
+
 COPY . /
 
 RUN pip install -r requirement.txt
