@@ -5,6 +5,7 @@ pipeline {
             steps{
                 echo"Trying to build Jenkins pipeline"
             }
+            
         }
     }
 }
