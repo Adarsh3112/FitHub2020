@@ -21,11 +21,4 @@ python manage.py runserver
 python manage.py runserver 0.0.0.0/6000
 ```
 
-## Run using Docker
-
-```
-docker pull nikhil2611/fithub:latest
-docker run -p 8000 -d nikhil2611/fithub
-```
-
 
